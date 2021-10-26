@@ -2,12 +2,10 @@
 
 int main () {
     char coordinates[10][10];
-    int i;
-    int j;
 
     /* fill the field with spaces and set borders */
-    for (i = 0; i < 10; i++) {
-        for (j = 0; j < 10; j++) {
+    for (short i = 0; i < 10; i++) {
+        for (short j = 0; j < 10; j++) {
             if ((i == 0 || i == 9) && (j > 0 && j < 9)) {
                 coordinates[i][j] = j + '0';
             }
@@ -28,11 +26,12 @@ int main () {
     coordinates[5][4] = 'O';
 
     /* print the whole field */
-    for(i = 0; i < 10; i++) {
-        for (j = 0; j < 10; j++) {
+    for (short i = 0; i < 10; i++) {
+        for (short j = 0; j < 10; j++) {
             printf("%c ", coordinates[i][j]);
         }
         puts("");
     }
     return 0;
 }
+    
