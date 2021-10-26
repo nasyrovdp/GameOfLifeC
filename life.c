@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main () {
-    char coordinates[10][10];
+    int y = 20;
+    int x = 20;
+    char coordinates[y][x];
 
     /* fill the field with spaces and set borders */
-    for (short i = 0; i < 10; i++) {
-        for (short j = 0; j < 10; j++) {
-            if ((i == 0 || i == 9) && (j > 0 && j < 9)) {
+    for (short i = 0; i < y; i++) {
+        for (short j = 0; j < x; j++) {
+            if ((i == 0 || i == y - 1) && (j > 0 && j < y - 1)) {
                 coordinates[i][j] = j + '0';
             }
-            else if ((j == 0 || j == 9) && (i > 0 && i < 9)) {
+            else if ((j == 0 || j == y - 1) && (i > 0 && i < y - 1)) {
                 coordinates[i][j] = i + '0';
             }
             else {
@@ -26,12 +28,11 @@ int main () {
     coordinates[5][4] = 'O';
 
     /* print the whole field */
-    for (short i = 0; i < 10; i++) {
-        for (short j = 0; j < 10; j++) {
+    for (short i = 0; i < y; i++) {
+        for (short j = 0; j < x; j++) {
             printf("%c ", coordinates[i][j]);
         }
         puts("");
     }
     return 0;
 }
-    
