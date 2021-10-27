@@ -8,10 +8,10 @@ int main () {
     /* fill the field with spaces and set borders */
     for (short i = 0; i < y; i++) {
         for (short j = 0; j < x; j++) {
-            if ((i == 0 || i == y - 1) && (j > 0 && j < x)) {
+            if ((i == 0 || i == y - 1) && (j > 0 && j < x - 1)) {
                 coordinates[i][j] = j + '0';
             }
-            else if ((j == 0 || j == x) && (i > 0 && i < y)) {
+            else if ((j == 0 || j == x - 1) && (i > 0 && i < y - 1)) {
                 coordinates[i][j] = i + '0';
             }
             else {
