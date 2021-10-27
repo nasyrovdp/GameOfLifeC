@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main () {
-    int y = 20;
-    int x = 20;
+    int y = 10;
+    int x = 10;
     char coordinates[y][x];
 
     /* fill the field with spaces and set borders */
