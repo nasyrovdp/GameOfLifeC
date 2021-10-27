@@ -20,7 +20,7 @@ int main () {
         }
     }
 
-    /* set the seed */
+    /* set the seed * /
     coordinates[3][3] = 'O';
     coordinates[3][4] = 'O';
     coordinates[4][4] = 'O';
@@ -34,5 +34,9 @@ int main () {
         }
         puts("");
     }
+
+    printf("\nPlease input dot coordinates for the seed (x, y, Enter).\nDot 1: ");
+    puts("");
+
     return 0;
 }
