@@ -3,6 +3,7 @@
 int main () {
     int y = 10;
     int x = 10;
+
     char coordinates[y][x];
 
     /* fill the field with spaces and set borders */
