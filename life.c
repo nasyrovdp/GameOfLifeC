@@ -1,17 +1,29 @@
 #include <stdio.h>
 
 int main () {
+<<<<<<< HEAD
     int y = 10;
     int x = 10;
+=======
+    int y = 20;
+    int x = 20;
+>>>>>>> e2f662211e2c3a03868938b4a5eaf8de0be4ceef
     char coordinates[y][x];
 
     /* fill the field with spaces and set borders */
     for (short i = 0; i < y; i++) {
         for (short j = 0; j < x; j++) {
+<<<<<<< HEAD
             if ((i == 0 || i == y - 1) && (j > 0 && j < x - 1)) {
                 coordinates[i][j] = j + '0';
             }
             else if ((j == 0 || j == x - 1) && (i > 0 && i < y - 1)) {
+=======
+            if ((i == 0 || i == y - 1) && (j > 0 && j < y - 1)) {
+                coordinates[i][j] = j + '0';
+            }
+            else if ((j == 0 || j == y - 1) && (i > 0 && i < y - 1)) {
+>>>>>>> e2f662211e2c3a03868938b4a5eaf8de0be4ceef
                 coordinates[i][j] = i + '0';
             }
             else {
