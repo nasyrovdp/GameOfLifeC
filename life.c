@@ -20,12 +20,10 @@ int main () {
         }
     }
 
-    /* set the seed * /
-    coordinates[3][3] = 'O';
-    coordinates[3][4] = 'O';
+    /* set the seed */
+    coordinates[4][3] = 'O';
     coordinates[4][4] = 'O';
     coordinates[4][5] = 'O';
-    coordinates[5][4] = 'O';
 
     /* print the whole field */
     for (short i = 0; i < y; i++) {
@@ -35,8 +33,19 @@ int main () {
         puts("");
     }
 
-    printf("\nPlease input dot coordinates for the seed (x, y, Enter).\nDot 1: ");
-    puts("");
+    /* check a cell for neighbors */
+    int neighbors_count = 0;
+    for (short i = 0; i < y; i++) {
+        for (short j = 0; j < x; j++) {
+            if (coordinates[i][j] != ' ') {
+                for (short i = -1; i < 1; i++) {
+                  /* code */
+                }
+            }
+            printf("%c ", coordinates[i][j]);
+        }
+        puts("");
+    }
 
     return 0;
 }
