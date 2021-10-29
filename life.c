@@ -71,16 +71,33 @@ int main () {
     int cell = neighbor_check(2, 3);
     printf("%i\n", cell);
 
+    /* fill the future field with dots */
+    char coordinates_future[y][x];
+    for (short i = 0; i < y; i++) {
+        for (short j = 0; j < x; j++) {
+            coordinates_future[i][j] = '.';
+        }
+    }
+
     for (short i = 0; i < y; i++) {
         for (short j = 0; j < x; j++) {
             short z = neighbor_check(i, j);
-            if (coordinates[i][j] == 'o' && (z <= 1 || z > 3)) {
-                coordinates[i][j] = '.';
+            if (coordinates[i][j] == 'o' && (z < 2 || z > 3)) {
+                coordinates_future[i][j] = '.';
+            } else if (coordinates[i][j] == 'o' && (z == 2 || z == 3)) {
+                coordinates_future[i][j] = 'o';
             } else if (coordinates[i][j] == '.' && z == 3) {
-                coordinates[i][j] = 'o';
+                coordinates_future[i][j] = 'o';
             }
         }
     }
+
+    for (short i = 0; i < y; i++) {
+        for (short j = 0; j < x; j++) {
+            coordinates[i][j] = coordinates_future[i][j];
+        }
+    }
+
 
     print_field();
 
