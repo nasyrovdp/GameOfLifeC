@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int y = 30;
-int x = 30;
-char coordinates[30][30];
-char coordinates_future[30][30];
+#define SIZE 30
+
+int y = SIZE;
+int x = SIZE;
+char coordinates[SIZE][SIZE];
+char coordinates_future[SIZE][SIZE];
 
 void print_field() {
     /* print the whole field */
@@ -69,7 +71,7 @@ int main () {
 
     print_field();
 
-    for (size_t i = 0; i < 50; i++) {
+    for (short i = 0; i < 50; i++) {
 
         /* check the whole field for future changes */
         for (short i = 0; i < y; i++) {
@@ -95,6 +97,7 @@ int main () {
         usleep(500000);
 
         puts("");
+        printf("    step %i\n", i + 1);
         print_field();
     }
 
