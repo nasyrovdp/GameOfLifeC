@@ -1,9 +1,16 @@
-# Game of Life C
-This is a pet project. The goal is to make a Game of Life by Conway in C programming language in training purposes.
+# About this project
+
+This project is an implementation of Conway's "Game of Life" in C programming language.
+
+The goals are:
+- to demonstrate what I have already learned in C;
+- to see the result of my work in real implementation;
+- to add new features and technologies in one live project and not many separate;
+- and to have fun of course! :)
 
 In this current version you need to compile and launch "life.c" in the Linux terminal.
 
-#### What is Game of Life?
+# What is "The Game of Life"?
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
 
 #### Rules:
