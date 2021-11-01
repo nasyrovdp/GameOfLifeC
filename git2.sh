@@ -11,7 +11,6 @@
 # git push origin -d $varname
 # git branch -d $varname
 git switch main
-git branch
 git merge dmitry-nasyrov
 git push origin main
 git push origin -d dmitry-nasyrov
