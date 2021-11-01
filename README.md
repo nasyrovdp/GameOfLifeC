@@ -1,12 +1,12 @@
 # About this project
 
-This project is an implementation of Conway's "Game of Life" in C programming language.
+This project is the implementation of Conway's "Game of Life" in C programming language.
 
 The goals are:
-- to demonstrate what I have already learned in C;
-- to see the result of my work in real implementation;
-- to add new features and technologies in one live project and not many separate;
-- and to have fun of course! :)
++ to demonstrate what I have already learned in C;
++ to see the result of my work in real implementation;
++ to add new features and technologies in one live project and not many separate;
++ and to have fun of course! :)
 
 In this current version you need to compile and launch "life.c" in the Linux terminal.
 
